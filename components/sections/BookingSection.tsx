@@ -9,7 +9,7 @@ export function BookingSection() {
   const whatsappUrl = buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE);
 
   return (
-    <section className="section-shell bg-[var(--color-cream)] text-[var(--color-ink)]">
+    <section id="reservar" className="section-shell bg-[var(--color-cream)] text-[var(--color-ink)]">
       <div className="container-premium grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <SectionTitle
           eyebrow="Reservas"

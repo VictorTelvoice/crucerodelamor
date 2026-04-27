@@ -1,22 +1,11 @@
 import { Button } from "@/components/ui/Button";
+import { experience } from "@/data/experience";
 import { businessInfo } from "@/lib/constants";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 
-type HeroSectionProps = {
-  eyebrow: string;
-  title: string;
-  subtitle: string;
-  primaryCta: string;
-  secondaryCta: string;
-};
+export function HeroSection() {
+  const { hero } = experience;
 
-export function HeroSection({
-  eyebrow,
-  title,
-  subtitle,
-  primaryCta,
-  secondaryCta,
-}: HeroSectionProps) {
   return (
     <section
       id="inicio"
@@ -28,19 +17,19 @@ export function HeroSection({
       <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="max-w-3xl">
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.38em] text-sunset-gold">
-            {eyebrow}
+            {hero.eyebrow}
           </p>
           <h1 className="text-5xl font-semibold tracking-tight text-warm-white sm:text-6xl lg:text-7xl">
-            {title}
+            {hero.title}
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-warm-white/78 sm:text-xl">
-            {subtitle}
+            {hero.subtitle}
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Button href={buildWhatsAppLink()}>{primaryCta}</Button>
+            <Button href={buildWhatsAppLink()}>{hero.primaryCta}</Button>
             <Button href="#experiencia" variant="secondary">
-              {secondaryCta}
+              {hero.secondaryCta}
             </Button>
           </div>
         </div>

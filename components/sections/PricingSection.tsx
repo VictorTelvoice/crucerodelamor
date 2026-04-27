@@ -6,7 +6,7 @@ import { experience } from "@/data/experience";
 
 export function PricingSection() {
   return (
-    <section id="precio" className="section-shell">
+    <section id="valor" className="section-padding">
       <SectionTitle
         eyebrow="Inversion"
         title="Una experiencia boutique en el Lago Calafquen"

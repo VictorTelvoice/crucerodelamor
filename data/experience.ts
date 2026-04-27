@@ -21,6 +21,12 @@ export const experience = {
   location: "Lago Calafquen, Lican Ray, Chile",
   priceCLP: 149000,
   priceLabel: "$149.000 CLP por persona",
+  priceNote:
+    "Valor referencial para reservas privadas. La confirmacion depende de clima, disponibilidad y tamano del grupo.",
+  price: {
+    formatted: "$149.000 CLP",
+    note: "Por persona. Reserva sujeta a clima, disponibilidad y confirmacion del grupo.",
+  },
   audience:
     "Parejas, grupos pequenos, turistas, celebraciones, aniversarios y experiencias exclusivas.",
   hero: {
@@ -37,6 +43,13 @@ export const experience = {
     "Musica rock durante la navegacion",
     "Cata de vino en el lago",
     "Asado al regresar, a los pies del lago",
+  ],
+  included: [
+    "Paseo personalizado en embarcacion privada",
+    "Navegacion al atardecer por el Lago Calafquen",
+    "Musica rock durante el tour",
+    "Cata de vino en el lago",
+    "Asado al regresar frente al agua",
   ],
   features: [
     {
@@ -109,4 +122,22 @@ export const experience = {
     "Propuesta boutique en Lican Ray",
     "Ambiente elegante, romantico y sensorial",
   ],
+  booking: {
+    title: "Reserva directa para tu grupo",
+    description:
+      "Escribenos con tu fecha, numero de personas y motivo de celebracion para coordinar una experiencia privada.",
+    fields: ["Fecha tentativa", "Numero de personas", "Ocasion", "Horario ideal"],
+    defaultMessage:
+      "Hola, quiero consultar disponibilidad para Innuendo por El Crucero del Amor.",
+  },
+  finalCta:
+    "Conversemos por WhatsApp y disenenos una salida privada con navegacion, vino, rock y asado frente al Lago Calafquen.",
 };
+
+export const galleryImages = experience.gallery;
+
+export const trustSignals = experience.trust.map((title) => ({
+  title,
+  description:
+    "Detalle editable para reforzar la confianza, el cuidado y el caracter boutique de la experiencia.",
+}));
