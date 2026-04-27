@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07111f;
+  --foreground: #fff8ea;
+  --lake: #08233d;
+  --lake-light: #0f3d5e;
+  --sunset: #d98b3a;
+  --gold: #f2c16b;
+  --wine: #6b1028;
+  --cream: #fff8ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(217, 139, 58, 0.16), transparent 34rem),
+    radial-gradient(circle at bottom right, rgba(107, 16, 40, 0.18), transparent 32rem),
+    linear-gradient(135deg, #06101d 0%, #08233d 46%, #03060b 100%);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(242, 193, 107, 0.32);
+  color: var(--cream);
+}
+
+.container-premium {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: 5rem;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 248, 234, 0.12);
+  background: rgba(255, 248, 234, 0.07);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(18px);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
